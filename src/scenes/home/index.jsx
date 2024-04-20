@@ -21,7 +21,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Box className="container">
+    <Box className="container" maxWidth={{xs: "70%", sm: "600px" }}>
       <h2>r/home Home Page</h2>
       <div className="line"></div>
       <ul className="post-list">

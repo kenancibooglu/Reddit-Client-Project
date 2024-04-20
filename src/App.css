@@ -9,10 +9,6 @@
 }
 
 @media (max-width: 1206px) {
-  .topbar {
-    height: 150px;
-  }
-  
   .sidebar {
     order: 2;
   }
