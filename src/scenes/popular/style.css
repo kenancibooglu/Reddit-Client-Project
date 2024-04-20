@@ -41,7 +41,7 @@
     
   .line {
       border-bottom: 1px rgb(74, 74, 74) solid;
-      width: 690px;
+      width: auto;
       margin: 8px;
   }
   

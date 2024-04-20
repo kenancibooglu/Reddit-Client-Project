@@ -21,7 +21,7 @@ const CallofDuty = () => {
     }, []);
 
     return (
-        <Box className="container" maxWidth={{xs: "70%", sm: "600px" }}>
+        <Box className="container" maxWidth={{xs: "70%", sm: "700px" }}>
             <h2>Call of Duty
             </h2> <p className="header-text">First-person shooters, Open world</p>
             <div className="line"></div>

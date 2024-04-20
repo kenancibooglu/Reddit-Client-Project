@@ -21,7 +21,7 @@ const Valheim = () => {
   }, []);
 
   return (
-    <Box className="container" maxWidth={{xs: "70%", sm: "600px" }}>
+    <Box className="container" maxWidth={{xs: "70%", sm: "700px" }}>
       <h2>Valheim </h2> <p className="header-text">survival games</p>
       <div className="line"></div>
       <ul className="post-list">

@@ -14,9 +14,10 @@
     color: white;
     border: 2px solid #D93A00;
     background-color: #D93A00;
-    border-radius: 25px;
+    border-radius: 10px;
     width: 80px;
     font-weight: bold;
+    height: 35px;
 }
 
 .get-app{

@@ -21,7 +21,7 @@ const Pokimane = () => {
     }, []);
 
     return (
-        <Box className="container" maxWidth={{xs: "70%", sm: "600px" }}>
+        <Box className="container" maxWidth={{xs: "70%", sm: "700px" }}>
             <h2>Pokimane
             </h2> <p className="header-text">Online streamers</p>
             <div className="line"></div>

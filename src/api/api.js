@@ -91,5 +91,45 @@ export const fetchRedditHome = async () => {
     console.log(data);
   })
 
+  export const fetchRedditSportsMegan = async() => {
+    const response = await fetch("https://www.reddit.com/r/megantheestallion.json")
+    const data = await response.json();
+    return data
+  }
+
+  fetchRedditSportsMegan().then(data => {
+    console.log(data);
+  })
+
+  export const fetchRedditSportsAtalanta = async() => {
+    const response = await fetch("https://www.reddit.com/r/Atalanta.json")
+    const data = await response.json();
+    return data
+  }
+
+  fetchRedditSportsAtalanta().then(data => {
+    console.log(data);
+  })
+
+
+  export const fetchRedditSportsPremier = async() => {
+    const response = await fetch("https://www.reddit.com/r/premier_league.json")
+    const data = await response.json();
+    return data
+  }
+
+  fetchRedditSportsPremier().then(data => {
+    console.log(data);
+  })
+
+  export const fetchRedditCsGo = async() => {
+    const response = await fetch("https://www.reddit.com/r/csgo.json")
+    const data = await response.json();
+    return data
+  }
+
+  fetchRedditCsGo().then(data => {
+    console.log(data);
+  })
 
   

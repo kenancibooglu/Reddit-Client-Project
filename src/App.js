@@ -13,6 +13,10 @@ import Pokimane from './components/pokimane/Pokimane';
 import CallofDuty from './components/callofduty/CallofDuty';
 import NFL from './components/sports/nfl/Nfl';
 import NBA from './components/sports/nba/Nba';
+import Megan from './components/sports/megan/Megan';
+import Atalanta from './components/sports/atlanta/Atalanta';
+import Premier from './components/sports/premier/Premier';
+import CsGlobal from './components/csgo/Csgo';
 
 
 function App() {
@@ -40,6 +44,10 @@ function App() {
               <Route path='/callofduty' element={<CallofDuty />} />
               <Route path='/NFL' element= {<NFL />} />
               <Route path='/NBA' element={<NBA />} />
+              <Route path='Megan' element={<Megan />} />
+              <Route path='Atlanta' element={<Atalanta />} />
+              <Route path='/Premier' element={<Premier />} />
+              <Route path='/csgo' element={<CsGlobal />} />
               {/* <Route path='/' element={<Gaming />} />
             <Route path='/' element={<Sports />} />
             <Route path='/' element={<Business />} />

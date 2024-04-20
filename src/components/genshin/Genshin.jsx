@@ -21,7 +21,7 @@ const Genshin = () => {
   }, []);
 
   return (
-    <Box className="container" maxWidth={{xs: "70%", sm: "600px" }}>
+    <Box className="container" maxWidth={{xs: "70%", sm: "700px" }}>
       <h2>Genshin Impact  </h2> <p className="header-text">Gacha games, Role-playing video games</p>
       <div className="line"></div>
       <ul className="post-list">

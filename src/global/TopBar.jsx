@@ -22,8 +22,8 @@ const Topbar = () => {
     p={2}
     sx={{ 
       borderBottom: "solid 0.5px rgb(74, 74, 74)",
-      flexDirection: { xs: 'row', sm: 'row' }, // Yatay yerine dikey düzenleme
-      alignItems: 'center' // Yatay hizalama
+      flexDirection: { xs: 'row', sm: 'row' },
+      alignItems: 'center'
     }}
   >
     {/* Left Icons */}
@@ -32,7 +32,7 @@ const Topbar = () => {
         <RedditIcon sx={{ color: "#D93A00", fontSize: { xs: "24px", sm: "30px" } }} />
         <Typography
           variant="h3"
-          sx={{ fontFamily: "monospace", fontWeight: "bold", fontSize: { xs: "16px", sm: "24px" } }}
+          sx={{ fontFamily: "monospace", fontWeight: "bold", fontSize: { xs: "15px", sm: "25px" } }}
         >
           reddit
         </Typography>
@@ -56,7 +56,7 @@ const Topbar = () => {
       </IconButton>
       <InputBase
         sx={{ ml: 2, flex: 1, height: 40 }}
-        placeholder="Search Reddit"
+        placeholder="Search..."
       />
     </Box>
     

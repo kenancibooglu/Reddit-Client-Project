@@ -21,7 +21,7 @@ const MineCraft = () => {
     }, []);
 
     return (
-        <Box className="container" maxWidth={{xs: "70%", sm: "600px" }}>
+        <Box className="container" maxWidth={{xs: "70%", sm: "700px" }}>
             <h2>Minecraft
             </h2> <p className="header-text">Open world, Action-adventure games, Sandbox games</p>
             <div className="line"></div>

@@ -166,7 +166,7 @@ const SideBar = () => {
                   fontSize="15px"
                   fontWeight="bold"
                 >
-                  <a href="/" className="recent">r/GlobalOffensive</a>
+                  <a href="/csgo" className="recent">r/GlobalOffensive</a>
                 </Typography>
               </>
             )}
