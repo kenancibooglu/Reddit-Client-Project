@@ -28,8 +28,8 @@ const Home = () => {
         {homePosts.map((post) => (
           <li key={post.data.id} className="list-item">
             <div className="listDiv">
+            <p className="title-data">{post.data.author}</p>
               <div className="img-wrapper" onClick={() => window.open(post.data.url)}>
-                {post.data.author}
                 <p>{post.data.title}</p>
                 <img
                   src={post.data.thumbnail}

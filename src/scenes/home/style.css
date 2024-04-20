@@ -47,13 +47,17 @@
 
 .like {
   border: 1px solid rgb(55, 50, 50);
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 5px;
   text-decoration: none;
   align-self: flex-start;
   margin-top: 10px; 
-  
+}
 
+.title-data {
+  border-bottom: 1px solid rgb(55, 50, 50);
+  width: 120px;
+  border-right: 1px solid rgb(55, 50, 50);
 }
 
 
