@@ -49,6 +49,7 @@ const SideBar = () => {
   const [isIconDownCrypto, setIconDirectionCrypto] = useState(true);
 
   const [isGamingVisible, setIsGamingVisible] = useState(true);
+  const [isSportVisible, setIsSportVisible] = useState(true);
 
 
 
@@ -73,6 +74,7 @@ const SideBar = () => {
 
   const handleClickSport = () => {
     setIconDirectionSport(!isIconDownSport);
+    setIsSportVisible(!isSportVisible)
   };
   const handleClickBusiness = () => {
     setIconDirectionBusiness(!isIconDownBusiness);
@@ -248,6 +250,24 @@ const SideBar = () => {
                         >
                           <Link to="/minecraft" className="recent">Minecraft</Link>
                         </Typography>
+                        <Typography
+                          variant="h6"
+                          color={colors.grey[100]}
+                          sx={{ m: "20px 0 25px -95px" }}
+                          fontSize="15px"
+                          fontWeight="bold"
+                        >
+                          <Link to="/pokimane" className="recent">Pokimane</Link>
+                        </Typography>
+                        <Typography
+                          variant="h6"
+                          color={colors.grey[100]}
+                          sx={{ m: "20px 0 25px -82px" }}
+                          fontSize="15px"
+                          fontWeight="bold"
+                        >
+                          <Link to="/callofduty" className="recent">Call of Duty</Link>
+                        </Typography>
                       </>
                     )}
 
@@ -257,17 +277,17 @@ const SideBar = () => {
                     <Typography
                       variant="h6"
                       color={colors.grey[100]}
-                      sx={{ m: "25px 0 25px -110px", display: "flex", alignItems: 'center' }}
+                      sx={{ m: "25px 0 25px -120px", display: "flex", alignItems: 'center' }}
                       fontSize="15px"
                     >
-                      <SportsBasketballIcon sx={{ fontSize: "22px", marginRight: "60px" }} />
-                      <span style={{ position: "absolute", left: "45px" }}>Sports</span>
+                      <SportsBasketballIcon sx={{ fontSize: "22px", marginRight: "10px" }} />
+                      Sports
                       <IconButton
                         sx={{
                           p: "5px",
                           float: "right",
                           top: "-1px",
-                          left: "90px",
+                          left: "98px",
                         }}
                         onClick={handleClickSport}
                       >
@@ -279,6 +299,55 @@ const SideBar = () => {
                       </IconButton>
                     </Typography>
                   </div>
+                  {isSportVisible && (
+                      <>
+                        <Typography
+                          variant="h6"
+                          color={colors.grey[100]}
+                          sx={{ m: "25px 0 25px -130px" }}
+                          fontSize="15px"
+                          fontWeight="bold"
+                        >
+                          <Link to="/NFL" className="recent">NFL</Link>
+                        </Typography>
+                        <Typography
+                          variant="h6"
+                          color={colors.grey[100]}
+                          sx={{ m: "25px 0 25px -130px" }}
+                          fontSize="15px"
+                          fontWeight="bold"
+                        >
+                          <Link to="/NBA" className="recent">NBA</Link>
+                        </Typography>
+                        <Typography
+                          variant="h6"
+                          color={colors.grey[100]}
+                          sx={{ m: "20px 0 25px -45px" }}
+                          fontSize="15px"
+                          fontWeight="bold"
+                        >
+                          <Link to="/Megan" className="recent">Megan Anderson</Link>
+                        </Typography>
+                        <Typography
+                          variant="h6"
+                          color={colors.grey[100]}
+                          sx={{ m: "20px 0 25px -60px" }}
+                          fontSize="15px"
+                          fontWeight="bold"
+                        >
+                          <Link to="/Atlanta" className="recent">Atlanta Hawks</Link>
+                        </Typography>
+                        <Typography
+                          variant="h6"
+                          color={colors.grey[100]}
+                          sx={{ m: "20px 0 25px -50px" }}
+                          fontSize="15px"
+                          fontWeight="bold"
+                        >
+                          <Link to="/Premier" className="recent">Premier League</Link>
+                        </Typography>
+                      </>
+                    )}
 
                   {/* BUSİNESS */}
                   <div className="category-container">

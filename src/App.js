@@ -9,6 +9,10 @@ import Topbar from './global/TopBar';
 import Valheim from './components/valheim/Valheim';
 import Genshin from './components/genshin/Genshin';
 import MineCraft from './components/minecraft/MineCraft';
+import Pokimane from './components/pokimane/Pokimane';
+import CallofDuty from './components/callofduty/CallofDuty';
+import NFL from './components/sports/nfl/Nfl';
+import NBA from './components/sports/nba/Nba';
 
 
 function App() {
@@ -32,6 +36,10 @@ function App() {
               <Route path='/valheim' element={<Valheim />} />
               <Route path='/genshin' element={<Genshin />} />
               <Route path="/minecraft" element={<MineCraft />} />
+              <Route path='/pokimane' element={<Pokimane />} />
+              <Route path='/callofduty' element={<CallofDuty />} />
+              <Route path='/NFL' element= {<NFL />} />
+              <Route path='/NBA' element={<NBA />} />
               {/* <Route path='/' element={<Gaming />} />
             <Route path='/' element={<Sports />} />
             <Route path='/' element={<Business />} />
