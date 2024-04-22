@@ -86,10 +86,11 @@ const SideBar = () => {
 
   return (
     <Box sx={{
-      position: "fixed",
       height: "900px",
-      borderRight: "1px rgb(74, 74, 74) solid"
-    }}>
+      position: "fixed",
+      borderRight: "white 1px"
+      }}>
+      <div className="bar-wrapper">
       <Sidebar
         backgroundColor={`${colors.primary[1000]}`}
         rootStyles={{
@@ -431,6 +432,7 @@ const SideBar = () => {
           </Box>
         </Menu>
       </Sidebar>
+      </div>
     </Box>
   );
 };

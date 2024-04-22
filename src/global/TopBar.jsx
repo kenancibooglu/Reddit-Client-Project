@@ -15,7 +15,7 @@ const Topbar = () => {
   const colorMode = useContext(ColorModeContext);
 
   return (
-   
+    <div className="bar-wrapper">
     <Box
     display="flex"
     justifyContent="space-between"
@@ -23,7 +23,7 @@ const Topbar = () => {
     sx={{ 
       borderBottom: "solid 0.5px rgb(74, 74, 74)",
       flexDirection: { xs: 'row', sm: 'row' },
-      alignItems: 'center'
+      alignItems: 'center',
     }}
   >
     {/* Left Icons */}
@@ -76,6 +76,7 @@ const Topbar = () => {
       <button className="color-button">Log In</button>
     </Box>
   </Box>
+  </div>
   
   );
 };
