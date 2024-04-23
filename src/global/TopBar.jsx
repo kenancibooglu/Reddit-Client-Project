@@ -7,7 +7,7 @@ import DarkLightModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import RedditIcon from "@mui/icons-material/Reddit";
 import GridViewIcon from '@mui/icons-material/GridView';
-import "./topbar.css";
+
 
 const Topbar = () => {
   const theme = useTheme();
