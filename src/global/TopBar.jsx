@@ -7,7 +7,7 @@ import DarkLightModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import RedditIcon from "@mui/icons-material/Reddit";
 import GridViewIcon from '@mui/icons-material/GridView';
-import "./styles.css";
+import "./topbar.css";
 
 const Topbar = () => {
   const theme = useTheme();
@@ -15,7 +15,7 @@ const Topbar = () => {
   const colorMode = useContext(ColorModeContext);
 
   return (
-    <div className="bar-wrapper">
+    <div className="bar-wrapper topbar-side">
     <Box
     display="flex"
     justifyContent="space-between"

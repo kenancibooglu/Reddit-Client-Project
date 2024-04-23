@@ -5,12 +5,13 @@
 }
 
 .category-container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
- 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-.color-button{
+
+.color-button {
     color: white;
     border: 2px solid #D93A00;
     background-color: #D93A00;
@@ -20,14 +21,22 @@
     height: 35px;
 }
 
-.get-app{
+.get-app {
     padding: 5px;
 }
+
 .recent {
-    color: inherit; 
-    text-decoration: none; 
-  }
-.recent:hover{
-    color:#D93A00
+    color: inherit;
+    text-decoration: none;
 }
 
+.recent:hover {
+    color: #D93A00
+}
+
+
+@media (max-width: 768px) {
+    .sidebar-content {
+        display: none;
+    }
+}

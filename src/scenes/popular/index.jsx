@@ -21,7 +21,7 @@ const Popular = () => {
   }, []);
 
   return (
-    <Box className="container" maxWidth={{xs: "70%", sm: "700px" }}>
+    <Box className="container" maxWidth={{ xs: "70%", sm: "700px" }}>
       <h2>r/popular Popular</h2>
       <div className="line"></div>
       <ul className="post-list">
@@ -38,9 +38,9 @@ const Popular = () => {
                 ></img>
                 <p>{post.data.selftext}</p>
                 <div className="button-sub">
-              <span className="like">Like {post.data.score}</span>
-              </div>
-              <span >Ratio {post.data.upvote_ratio}</span>
+                  <span className="like">Like {post.data.score}</span>
+                </div>
+                <span >Ratio {post.data.upvote_ratio}</span>
               </div>
             </div>
           </li>

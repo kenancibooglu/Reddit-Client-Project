@@ -19,21 +19,19 @@ import Premier from './components/sports/premier/Premier';
 import CsGlobal from './components/csgo/Csgo';
 
 
+
 function App() {
   const [theme, colorMode] = useMode();
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <Topbar />
         <div className='App'>
-          <div className='topbar'>
-            <Topbar />
-          </div>
           <main className='content'>
           <div className='sidebar'>
             <SideBar />
           </div>
-         
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/popular' element={<Popular />} />

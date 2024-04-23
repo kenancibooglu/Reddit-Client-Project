@@ -85,15 +85,14 @@ const SideBar = () => {
   };
 
   return (
-    <Box sx={{
-      height: "900px",
-      position: "fixed",
-      borderRight: "white 1px"
-      }}>
-      <div className="bar-wrapper">
+    <Box>
+      <div className="sidebar-content">
       <Sidebar
         backgroundColor={`${colors.primary[1000]}`}
         rootStyles={{
+          borderTop: "solid 1px #D93A00",
+          borderRadius: "20px",
+          position: "fixed",
           height: "100%",
           overflow: "auto",
           backgroundColor: "transparent",
@@ -103,7 +102,7 @@ const SideBar = () => {
           iconShape="square"
           menuItemStyles={{
             button: {
-              padding: "1px 35px 5px 20px !important",
+              padding: "1px 35px 5px 17px !important",
               [`&:hover`]: {
                 backgroundColor: "#B4B4B8",
               },

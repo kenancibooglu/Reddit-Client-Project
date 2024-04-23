@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchRedditHome} from "../../api/api";
+import { fetchRedditHome } from "../../api/api";
 import "./style.css";
 import { Box } from "@mui/material";
 
@@ -21,14 +21,14 @@ const Home = () => {
   }, []);
 
   return (
-    <Box className="container" maxWidth={{xs: "70%", sm: "700px" }}>
+    <Box className="container" maxWidth={{ xs: "70%", sm: "700px" }}>
       <h2>r/home Home Page</h2>
       <div className="line"></div>
       <ul className="post-list">
         {homePosts.map((post) => (
           <li key={post.data.id} className="list-item">
             <div className="listDiv">
-            <p className="title-data">{post.data.author}</p>
+              <p className="title-data">{post.data.author}</p>
               <div className="img-wrapper" onClick={() => window.open(post.data.url)}>
                 <p>{post.data.title}</p>
                 <img
@@ -39,7 +39,7 @@ const Home = () => {
                 <p>{post.data.selftext}</p>
               </div>
               <div className="button-sub">
-              <span className="like">Like {post.data.score}</span>
+                <span className="like">Like {post.data.score}</span>
               </div>
               <span >Ratio {post.data.upvote_ratio}</span>
             </div>
