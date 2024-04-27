@@ -1,5 +1,5 @@
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ColorModeContext, tokens } from "../theme";
 import { InputBase } from "@mui/material";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
@@ -7,12 +7,20 @@ import DarkLightModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import RedditIcon from "@mui/icons-material/Reddit";
 import GridViewIcon from '@mui/icons-material/GridView';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+
 
 
 const Topbar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleSearchClick = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className="bar-wrapper topbar-side">
@@ -51,13 +59,26 @@ const Topbar = () => {
       ml={{ xs: 0, sm: 2 }} 
       mt={{ xs: 1, sm: 0 }} 
     >
-      <IconButton type="button" sx={{ p: 1 }}>
+      <IconButton type="button" sx={{ p: 1 }} >
         <SearchIcon />
       </IconButton>
       <InputBase
         sx={{ ml: 2, flex: 1, height: 40 }}
         placeholder="Search..."
+        onClick={handleSearchClick}
       />
+      <div>
+      {isOpen && (
+        <List className="search-list">
+          <ListItem >
+           <a href="/" className="ahref">Home</a>
+          </ListItem>
+          <ListItem >
+            <a href="/popular" className="ahref">Popular</a>
+          </ListItem>
+        </List>
+      )}
+      </div>
     </Box>
     
     {/* Icons */}

@@ -17,6 +17,12 @@ import Megan from './components/sports/megan/Megan';
 import Atalanta from './components/sports/atlanta/Atalanta';
 import Premier from './components/sports/premier/Premier';
 import CsGlobal from './components/csgo/Csgo';
+import Tesla from './components/business/tesla/Tesla';
+import SpaceX from './components/business/spacex/SpaceX';
+import Pfizer from './components/business/pfizer/Pfizer';
+import Novavax from './components/business/novavax/Novavax';
+import Moderna from './components/business/moderna/Moderna';
+
 
 
 
@@ -46,13 +52,13 @@ function App() {
               <Route path='Atlanta' element={<Atalanta />} />
               <Route path='/Premier' element={<Premier />} />
               <Route path='/csgo' element={<CsGlobal />} />
-              {/* <Route path='/' element={<Gaming />} />
-            <Route path='/' element={<Sports />} />
-            <Route path='/' element={<Business />} />
-            <Route path='/' element={<Crypto />} />
-            <Route path='/' element={<Television />} />
-            <Route path='/' element={<Celebrity />} /> */}
-            </Routes>
+              <Route path='/tesla' element={<Tesla />} />
+              <Route path='/spacex' element={<SpaceX />} />
+              <Route path='/pfizer'element={<Pfizer />} />
+              <Route path='/novavax' element={<Novavax />} />
+              <Route path='/moderna' element={<Moderna />} />
+              
+            </Routes> 
           </main>
         </div>
       </ThemeProvider>

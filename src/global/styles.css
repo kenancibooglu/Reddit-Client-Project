@@ -35,6 +35,21 @@
     color: #D93A00
 }
 
+.search-list{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    
+}
+
+.ahref{
+    text-decoration: none;
+    color: inherit;
+}
+
+
 
 @media (max-width: 768px) {
     .sidebar-content {

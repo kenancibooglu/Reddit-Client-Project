@@ -132,4 +132,58 @@ export const fetchRedditHome = async () => {
     console.log(data);
   })
 
+  export const fetchRedditBusinessTesla = async() => {
+    const response = await fetch("https://www.reddit.com/r/tesla.json")
+    const data = await response.json();
+    return data
+  }
+
+  fetchRedditBusinessTesla().then(data => {
+    console.log(data);
+  })
+
+
+  export const fetchRedditBusinessSpaceX = async() => {
+    const response = await fetch("https://www.reddit.com/r/spacex.json")
+    const data = await response.json();
+    return data
+  }
+
+  fetchRedditBusinessSpaceX().then(data => {
+    console.log(data);
+  })
+
+  export const fetchRedditBusinessPfizer= async() => {
+    const response = await fetch("https://www.reddit.com/r/pfizer.json")
+    const data = await response.json();
+    return data
+  }
+
+  fetchRedditBusinessPfizer().then(data => {
+    console.log(data);
+  })
+
+  export const fetchRedditBusinessNovavax= async() => {
+    const response = await fetch("https://www.reddit.com/r/novavax.json")
+    const data = await response.json();
+    return data
+  }
+
+  fetchRedditBusinessNovavax().then(data => {
+    console.log(data);
+  })
+
+
+  export const fetchRedditBusinessModerna= async() => {
+    const response = await fetch("https://www.reddit.com/r/gamestop.json")
+    const data = await response.json();
+    return data;
+  }
+
+  fetchRedditBusinessModerna().then(data => {
+    console.log(data);
+  })
+
+
+
   

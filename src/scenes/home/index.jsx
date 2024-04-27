@@ -14,6 +14,7 @@ const Home = () => {
         data: {
           ...post.data,
           thumbnail: post.data.url, // orijinal image url'si
+         
         },
       }));
       setHomePosts(filteredPosts);
@@ -22,7 +23,8 @@ const Home = () => {
 
   return (
     <Box className="container" maxWidth={{ xs: "70%", sm: "700px" }}>
-      <h2>r/home Home Page</h2>
+      <h2>Home Page</h2>
+      <p className="header-text">The area where data from the reddit home page is displayed</p>
       <div className="line"></div>
       <ul className="post-list">
         {homePosts.map((post) => (
